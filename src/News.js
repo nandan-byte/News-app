@@ -6,12 +6,12 @@ export default function News(props) {
                     props.article.urlToImage !== null ?
                     <img 
                         src={props.article.urlToImage} 
-                        alt={props.article.title || "News image"} 
+                        alt={props.article.title ? `Image for: ${props.article.title}` : ""} 
                     />
                     : 
                     <img 
                         src="https://th.bing.com/th/id/OIP.wDo8BJzyoOT-_7vRvgGrlgHaH0?pid=ImgDet&w=185&h=195&c=7&dpr=1.3" 
-                        alt="Default news image" 
+                        alt="" 
                     />
                 }
             </div>
